@@ -4,7 +4,7 @@ rm -rf data
 unzip data.zip
 
 get_file_size() {
-  gfind "$1" -printf "%s\n"
+  find "$1" -printf "%s\n"
 }
 
 total_size_raw=0

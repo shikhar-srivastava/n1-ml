@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 get_file_size() {
-  gfind "$1" -printf "%s\n"
+  find "$1" -printf "%s\n"
 }
 
 echo "mode,total_original_size_bytes,total_compressed_size_bytes,compression_ratio,average_compression_speed_xRT,average_decompression_speed_xRT" >> "$PWD/tests/compression_results.csv"
